@@ -1,0 +1,250 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #419be4; /* Blue.5 */
+    padding: 10px 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li{
+    font-size: 25px;
+}
+ .navbar .nav-links li a {
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links li a:hover {
+    color: #CBE2F2; /* Blue.4 lighter shade on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 40px 20px;
+    background-color: white; /* Blue.1 */
+    color: #161515; /* Dark gray text */
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    color: #000000; /* Black text */
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333; /* Dark gray text */
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #CBE2F2; /* Blue.4 */
+    padding: 20px;
+    text-align: center;
+    color: #333333; /* Dark gray text */
+}
+
+/* General Body and Background */
+body {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #333333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Headings */
+h2, h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 30px;
+    padding: 20px;
+    background: none; /* No gradient */
+    color: #000000; /* Black text */
+    text-shadow: none; /* Remove text shadow */
+}
+
+/* Section Box */
+section {
+    padding: 40px 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box {
+    background-color: #EBEDF0; /* Blue.3 */
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+
+.box h3 {
+    color: #16a085; /* Teal for headings */
+    font-size: 24px;
+}
+
+.box:hover {
+    transform: translateY(-10px) scale(1.02);
+    background-color: #CBE2F2; /* Blue.4 */
+    border: 1px solid #16a085; /* Highlight border */
+}
+
+.box:hover h3 {
+    color: #2c3e50; /* Dark blue on hover */
+}
+
+/* Ozone Calculation Section */
+#calculation {
+    margin-top: 0;
+    padding: 40px 20px;
+    background-color: #F2F4F6; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#calculation h1 {
+    font-size: 36px;
+    color: #000000; /* Black text */
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: none; /* No gradient */
+    text-shadow: none; /* Remove text shadow */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #EBEDF0; /* Blue.3 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50; /* Dark blue */
+}
+
+select, input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC; /* Light gray border */
+    background-color: #FFFFFF; /* White background */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #16a085; /* Teal */
+    color: #FFFFFF; /* White text */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e8f8e; /* Darker teal on hover */
+}
+
+/* Result Box */
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #E0F7FA; /* Light teal background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #333333; /* Dark gray text */
+}
+
+.result h2 {
+    font-size: 24px;
+    color: #000000; /* Black text */
+    margin-bottom: 10px;
+}
+
+/* Ozone Calculation Section */
+#calculation {
+    margin-top: 0;
+    padding: 40px 20px;
+    background-color: #F2F4F6; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex container for form and result */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Form container styles */
+.form-container {
+    flex: 1; /* Allow form to take available space */
+}
+
+/* Result box styles */
+.result {
+    flex: 0 0 300px; /* Fixed width for result box */
+    margin-top: 0;
+    padding: 20px;
+    background-color: #E0F7FA; /* Light teal background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #333333; /* Dark gray text */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #EBEDF0; /* Blue.3 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Result Heading */
+.result h2 {
+    font-size: 24px;
+    color: #000000; /* Black text */
+    margin-bottom: 10px;
+}

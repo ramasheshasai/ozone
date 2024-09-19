@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozone Layer Depletion Awareness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome CDN -->
+</head>
+<body>
+    
+
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Ozone Awareness</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#causes">Causes</a></li>
+                <li><a href="#prevention">Prevention</a></li>
+                <li><a href="#calculation">Ozone Depletion Calculator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="main-content" id="home">
+        <div class="container">
+            <h1>Understanding the Ozone Layer</h1>
+            <p>
+                The ozone layer is a thin layer of ozone molecules (O₃) located in the Earth's stratosphere,
+                which protects life on Earth by absorbing most of the sun's harmful ultraviolet (UV) radiation.
+                Without the ozone layer, harmful UV-B radiation would reach the Earth's surface, leading to
+                increased skin cancer, cataracts, and other health problems, as well as damaging the environment.
+            </p>
+            <p>
+                Unfortunately, human activities have led to the depletion of the ozone layer, primarily through
+                the release of chemicals such as chlorofluorocarbons (CFCs), halons, and other ozone-depleting substances (ODS).
+                International efforts like the Montreal Protocol have been successful in reducing the use of ODS, but
+                ozone depletion remains a critical environmental issue.
+            </p>
+        </div>
+    </section>
+
+    
+    <section id="causes">
+        <h2>Causes of Ozone Layer Depletion</h2>
+        <div class="container">
+            <div class="box scroll-effect">
+                <h3><i class="fas fa-cloud-sun"></i> Chlorofluorocarbons (CFCs)</h3>
+                <p>CFCs are released into the atmosphere through industrial activities. They break down ozone molecules, leading to ozone depletion.</p>
+            </div>
+            <div class="box scroll-effect">
+                <h3><i class="fas fa-fire-extinguisher"></i> Halons</h3>
+                <p>Halons, used in fire extinguishers, release bromine atoms, which are even more destructive to ozone than chlorine.</p>
+            </div>
+            <div class="box scroll-effect">
+                <h3><i class="fas fa-leaf"></i> Nitrous Oxide</h3>
+                <p>Emissions from agriculture and industrial processes release nitrous oxide, which also contributes to ozone depletion.</p>
+            </div>
+            <div class="box scroll-effect">
+                <h3><i class="fas fa-flask"></i> Methyl Chloroform</h3>
+                <p>Used as a solvent in industries, this chemical also harms the ozone layer.</p>
+            </div>
+            <div class="box scroll-effect">
+                <h3><i class="fas fa-industry"></i> Carbon Tetrachloride</h3>
+                <p>Previously used in industrial applications, carbon tetrachloride contributes significantly to ozone layer depletion.</p>
+            </div>
+            <div class="box scroll-effect">
+                <h3><i class="fas fa-plane"></i> Nitrogen Oxides (NOx)</h3>
+                <p>Emissions from jet engines and industrial processes release nitrogen oxides, which can deplete ozone in the stratosphere.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="prevention">
+        <h1>Prevention of Ozone Layer Depletion</h1>
+        <div class="container">
+            <div class="box scroll-effect">
+                <h3><i class="fas fa-recycle"></i> Reduce Use of Ozone-Depleting Substances</h3>
+                <p>Avoid products containing CFCs and other harmful chemicals. Opt for eco-friendly alternatives in industrial and household products.</p>
+            </div>
+            <div class="box scroll-effect">
+                <h3><i class="fas fa-thermometer-half"></i> Promote Refrigerant Management</h3>
+                <p>Ensure proper maintenance and disposal of refrigerants used in air conditioning and refrigeration systems to prevent leakage.</p>
+            </div>
+            <div class="box scroll-effect">
+                <h3><i class="fas fa-solar-panel"></i> Support Renewable Energy</h3>
+                <p>Encourage the use of renewable energy sources like solar and wind power to reduce dependence on fossil fuels.</p>
+            </div>
+            <div class="box scroll-effect">
+                <h3><i class="fas fa-globe"></i> Advocate for Environmental Policies</h3>
+                <p>Support and advocate for policies that aim to protect the environment and reduce the emission of harmful substances.</p>
+            </div>
+            <div class="box scroll-effect">
+                <h3><i class="fas fa-plant"></i> Increase Green Spaces</h3>
+                <p>Promote afforestation and the development of green spaces to improve air quality and support the ecosystem.</p>
+            </div>
+            <div class="box scroll-effect">
+                <h3><i class="fas fa-water"></i> Conserve Water</h3>
+                <p>Implement water-saving practices to reduce pollution and conserve natural resources, helping maintain a balanced ecosystem.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculation">
+        <h1>Calculate Ozone Layer Depletion</h1>
+        <div class="container">
+            <div class="form-container">
+                <form id="depletion-form">
+                    <label for="item">Item or Activity:</label>
+                    <select id="item" name="item" required>
+                        <option value="">Select an item</option>
+                        <option value="vehicle">Vehicle</option>
+                        <option value="airConditioner">Air Conditioner</option>
+                        <option value="refrigerator">Refrigerator</option>
+                        <option value="industrial">Industrial Activity</option>
+                        <option value="other">Other</option>
+                    </select>
+    
+                    <label for="hours">Hours of Use per Month:</label>
+                    <input type="number" id="hours" name="hours" required min="0">
+    
+                    <button type="button" onclick="calculateDepletion()">Calculate Depletion</button>
+                </form>
+            </div>
+            <div id="result" class="result">
+                <!-- Result will be displayed here -->
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="script.js"></script> <!-- Add your JavaScript file here -->
+</body>
+</html>
